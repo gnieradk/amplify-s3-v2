@@ -5,10 +5,10 @@
   "description": "",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && amplify build",
+    "build": "vite build && npx ampx build",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sandbox": "amplify sandbox"
+    "sandbox": "npx ampx sandbox"
   },
   "keywords": [],
   "author": "",
