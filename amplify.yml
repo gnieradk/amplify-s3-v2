@@ -3,9 +3,12 @@ backend:
   phases:
     build:
       commands:
+        - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+        - . ~/.nvm/nvm.sh
         - nvm install 20
         - nvm use 20
-        - npm ci --cache .npm --prefer-offline
+        - export NODE_OPTIONS="--max-old-space-size=4096"
+        - npm ci --prefer-offline --no-audit
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
   cache:
     paths:
