@@ -1,6 +1,7 @@
 {
   "name": "amplify-s3-v2",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
