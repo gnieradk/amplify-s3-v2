@@ -3,23 +3,32 @@
   "version": "1.0.0",
   "type": "module",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build && amplify build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sandbox": "amplify sandbox"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "aws-amplify": "^6.15.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
     "@aws-amplify/backend": "^1.16.1",
     "@aws-amplify/backend-cli": "^1.8.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "aws-cdk-lib": "^2.204.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.25.9",
     "tsx": "^4.20.5",
-    "typescript": "^5.9.2"
-  },
-  "dependencies": {
-    "aws-amplify": "^6.15.5"
+    "typescript": "^5.9.2",
+    "vite": "^5.4.8"
   }
 }
