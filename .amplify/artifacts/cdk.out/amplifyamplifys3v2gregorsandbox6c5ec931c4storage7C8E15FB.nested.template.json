@@ -213,15 +213,7 @@
       "Arn"
      ]
     },
-    "Runtime": {
-     "Fn::FindInMap": [
-      "LatestNodeRuntimeMap",
-      {
-       "Ref": "AWS::Region"
-      },
-      "value"
-     ]
-    },
+    "Runtime": "nodejs22.x",
     "Description": {
      "Fn::Join": [
       "",
@@ -265,7 +257,7 @@
     "aws:cdk:path": "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/APP_USER_FILES_BUCKET_NAMEParameter/Resource"
    }
   },
-  "amplifyamplifys3v2gregorsandbox6c5ec931c4storageAccess426D0A21D": {
+  "amplifyamplifys3v2gregorsandbox6c5ec931c4storageAccess30436A264": {
    "Type": "AWS::IAM::Policy",
    "Properties": {
     "PolicyDocument": {
@@ -345,7 +337,7 @@
      ],
      "Version": "2012-10-17"
     },
-    "PolicyName": "amplifyamplifys3v2gregorsandbox6c5ec931c4storageAccess426D0A21D",
+    "PolicyName": "amplifyamplifys3v2gregorsandbox6c5ec931c4storageAccess30436A264",
     "Roles": [
      {
       "Ref": "referencetoamplifyamplifys3v2gregorsandbox6c5ec931c4authNestedStackauthNestedStackResourceD450FD70Outputsamplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthauthenticatedUserRole9B5A0308Ref"
@@ -355,151 +347,18 @@
    "UpdateReplacePolicy": "Delete",
    "DeletionPolicy": "Delete",
    "Metadata": {
-    "aws:cdk:path": "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4--storageAccess4/Resource"
+    "aws:cdk:path": "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4--storageAccess3/Resource"
    }
   },
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/12LSwrCMBCGz+I+HbUKrtW1UuwBZEzHMtYkJTNtkdC7i1RUXH3/M4d8sYbFDAfJbNVkd75AOpIoVaWibQwOck6ygrTrbENq9lf/VhOKcGf7+MaTH42Ig1RqZF8XGNGRUnytPmY0jA7S9/9+jmbfiQZ3IgldtPSqfvUB25Z9/bcqYui5orhDIbMVIS0Va/b1aHyoCG4y7/MlbGA1uwlzFjuv7AhOE5+qvpg9BwEAAA=="
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WLTQ6CMBCFz8K+jAomrpW9IXAAU8tIRmibdAaIabi7IRCJq/e9vwyy0xmOiZ44NU2X9vSEeEcWbGrRplN64kfkHOJtMB2KKl5uo1VK35P57PHqZ8VsIdYSyLWlDtqiYFhWPzMr0hbi/t+esyoGFm8rZD8Eg0u1819VBj9Sg+GmGdWVGaUW3ZJrZ+V8g/Dmw5id4AJ58maiNAxOyCJUq34B//4UQfwAAAA="
    },
    "Metadata": {
     "aws:cdk:path": "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/CDKMetadata/Default"
    },
    "Condition": "CDKMetadataAvailable"
-  }
- },
- "Mappings": {
-  "LatestNodeRuntimeMap": {
-   "af-south-1": {
-    "value": "nodejs22.x"
-   },
-   "ap-east-1": {
-    "value": "nodejs22.x"
-   },
-   "ap-east-2": {
-    "value": "nodejs22.x"
-   },
-   "ap-northeast-1": {
-    "value": "nodejs22.x"
-   },
-   "ap-northeast-2": {
-    "value": "nodejs22.x"
-   },
-   "ap-northeast-3": {
-    "value": "nodejs22.x"
-   },
-   "ap-south-1": {
-    "value": "nodejs22.x"
-   },
-   "ap-south-2": {
-    "value": "nodejs22.x"
-   },
-   "ap-southeast-1": {
-    "value": "nodejs22.x"
-   },
-   "ap-southeast-2": {
-    "value": "nodejs22.x"
-   },
-   "ap-southeast-3": {
-    "value": "nodejs22.x"
-   },
-   "ap-southeast-4": {
-    "value": "nodejs22.x"
-   },
-   "ap-southeast-5": {
-    "value": "nodejs22.x"
-   },
-   "ap-southeast-7": {
-    "value": "nodejs22.x"
-   },
-   "ca-central-1": {
-    "value": "nodejs22.x"
-   },
-   "ca-west-1": {
-    "value": "nodejs22.x"
-   },
-   "cn-north-1": {
-    "value": "nodejs22.x"
-   },
-   "cn-northwest-1": {
-    "value": "nodejs22.x"
-   },
-   "eu-central-1": {
-    "value": "nodejs22.x"
-   },
-   "eu-central-2": {
-    "value": "nodejs22.x"
-   },
-   "eu-isoe-west-1": {
-    "value": "nodejs18.x"
-   },
-   "eu-north-1": {
-    "value": "nodejs22.x"
-   },
-   "eu-south-1": {
-    "value": "nodejs22.x"
-   },
-   "eu-south-2": {
-    "value": "nodejs22.x"
-   },
-   "eu-west-1": {
-    "value": "nodejs22.x"
-   },
-   "eu-west-2": {
-    "value": "nodejs22.x"
-   },
-   "eu-west-3": {
-    "value": "nodejs22.x"
-   },
-   "eusc-de-east-1": {
-    "value": "nodejs22.x"
-   },
-   "il-central-1": {
-    "value": "nodejs22.x"
-   },
-   "me-central-1": {
-    "value": "nodejs22.x"
-   },
-   "me-south-1": {
-    "value": "nodejs22.x"
-   },
-   "mx-central-1": {
-    "value": "nodejs22.x"
-   },
-   "sa-east-1": {
-    "value": "nodejs22.x"
-   },
-   "us-east-1": {
-    "value": "nodejs22.x"
-   },
-   "us-east-2": {
-    "value": "nodejs22.x"
-   },
-   "us-gov-east-1": {
-    "value": "nodejs22.x"
-   },
-   "us-gov-west-1": {
-    "value": "nodejs22.x"
-   },
-   "us-iso-east-1": {
-    "value": "nodejs18.x"
-   },
-   "us-iso-west-1": {
-    "value": "nodejs18.x"
-   },
-   "us-isob-east-1": {
-    "value": "nodejs18.x"
-   },
-   "us-isob-west-1": {
-    "value": "nodejs18.x"
-   },
-   "us-west-1": {
-    "value": "nodejs22.x"
-   },
-   "us-west-2": {
-    "value": "nodejs22.x"
-   }
   }
  },
  "Conditions": {
