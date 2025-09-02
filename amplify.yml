@@ -3,7 +3,16 @@ backend:
   phases:
     build:
       commands:
+        # Ensure Node 20 is used
+        - nvm install 20
+        - nvm use 20
+        - node -v
+        - npm -v
+
+        # Install backend dependencies (bypass lockfile issues)
         - npm install --prefer-offline --no-audit --legacy-peer-deps
+
+        # Deploy Amplify backend
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
   cache:
     paths:
@@ -15,7 +24,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci --prefer-offline --no-audit
+        # Use Node 20 here too
+        - nvm install 20
+        - nvm use 20
+        - node -v
+        - npm -v
+
+        # Install frontend dependencies (bypass lockfile issues)
+        - npm install --prefer-offline --no-audit --legacy-peer-deps
     build:
       commands:
         - npm run build
