@@ -1,0 +1,403 @@
+{
+  "version": "45.0.0",
+  "artifacts": {
+    "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "amplify:deployment-type": "sandbox",
+          "created-by": "amplify"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/50bde30d50856f8d981d593b836d97f07609948ca2897fe0c2d7b6b5bbc070b1.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4.assets"
+      ],
+      "metadata": {
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "amplify:deployment-type",
+                "Value": "sandbox"
+              },
+              {
+                "Key": "created-by",
+                "Value": "amplify"
+              }
+            ]
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/deploymentType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deploymentType"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "region"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyAuth/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPool4BA7F805"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyAuth/UserPoolAppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPoolAppClient2626C6F8"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyAuth/IdentityPool": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPool3FDE84CC"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyAuth/authenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthunauthenticatedUserRole2B524D9E"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyAuth/IdentityPoolRoleAttachment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPoolRoleAttachment045F17C8"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthUserPoolE1400B02Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthUserPoolE1400B02Ref"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthUserPoolAppClientE5064338Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthUserPoolAppClientE5064338Ref"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthIdentityPoolC13BEF34Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthIdentityPoolC13BEF34Ref"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth/amplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthauthenticatedUserRole9B5A0308Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthauthenticatedUserRole9B5A0308Ref"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/auth.NestedStack/auth.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "auth179371D7"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/userPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "userPoolId"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/webClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "webClientId"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/identityPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "identityPoolId"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/authRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authRegion"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/allowUnauthenticatedIdentities": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "allowUnauthenticatedIdentities"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/signupAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "signupAttributes"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/usernameAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "usernameAttributes"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/verificationMechanisms": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "verificationMechanisms"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/passwordPolicyMinLength": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyMinLength"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/passwordPolicyRequirements": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyRequirements"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/mfaConfiguration": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaConfiguration"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/mfaTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaTypes"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/socialProviders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "socialProviders"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/oauthCognitoDomain": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthCognitoDomain"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/oauthScope": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthScope"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/oauthRedirectSignIn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignIn"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/oauthRedirectSignOut": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignOut"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/oauthResponseType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthResponseType"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/oauthClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthClientId"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/groups": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "groups"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/appUserFiles/Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "appUserFilesBucketED3E112E"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/appUserFiles/Bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "appUserFilesBucketPolicy82875598"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/appUserFiles/Bucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "appUserFilesBucketAutoDeleteObjectsCustomResource6C1FCE43"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/APP_USER_FILES_BUCKET_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPUSERFILESBUCKETNAMEParameterD584AB8B"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4--storageAccess4/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyamplifys3v2gregorsandbox6c5ec931c4storageAccess426D0A21D"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/reference-to-amplifyamplifys3v2gregorsandbox6c5ec931c4authNestedStackauthNestedStackResourceD450FD70Outputs.amplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthauthenticatedUserRole9B5A0308Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyamplifys3v2gregorsandbox6c5ec931c4authNestedStackauthNestedStackResourceD450FD70Outputsamplifyamplifys3v2gregorsandbox6c5ec931c4authamplifyAuthauthenticatedUserRole9B5A0308Ref"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage/amplifyamplifys3v2gregorsandbox6c5ec931c4storageappUserFilesBucketB6F04848Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyamplifys3v2gregorsandbox6c5ec931c4storageappUserFilesBucketB6F04848Ref"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storage.NestedStack/storage.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storage0EC3F24A"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/storageRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storageRegion"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/bucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucketName"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/buckets": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "buckets"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/amplify-amplifys3v2-gregor-sandbox-6c5ec931c4/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "amplify-amplifys3v2-gregor-sandbox-6c5ec931c4"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  },
+  "minimumCliVersion": "2.1020.2"
+}
